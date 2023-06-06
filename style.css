@@ -1,0 +1,80 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right,lightpink,lightblue,lightgreen);
+  display: flex;
+  height: 100vh;
+  justify-content:center;
+  align-items: center;
+  font-family:'Times New Roman', Times, serif;
+
+}
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+body  {
+    background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+  background-size:cover;
+        -webkit-animation: slidein 100s;
+        animation: slidein 100s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;              
+}
+
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+}
+
+@keyframes slidein {
+from {background-position: top;background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+
+}
+.container{
+  background: linear-gradient(to right,lightgreen,lightblue,lightyellow);
+box-shadow: 0 10px 20px;
+border-radius: 10px;
+text-align: center;
+padding: 10px;
+width: 600px;
+margin: 10px;
+}
+.btn{
+  background-color: brown;
+  color: antiquewhite;
+  padding: 10px 30px;
+  font-size:16px;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn:disabled{
+  background-color: blueviolet;
+  cursor:not-allowed;
+}
+
+.anime-img{
+  height: 300px;
+  width: 300px;
+border-radius: 50%;
+border: 10px  solid pink;
+}
+.anime-name{
+  margin: 20px;
+  background-color: green;
+  color: aliceblue;
+  padding: 20px;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: 600;
+}
+.anime-container{
+  display: none;
+}
